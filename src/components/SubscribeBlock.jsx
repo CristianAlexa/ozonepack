@@ -12,7 +12,7 @@ const SubscribeBlock = () => {
       </p>
       <form
         onSubmit={onSubmitHandler}
-        className="w-full sm:w-1/2 flex items-center mx-auto my-6 border pl-3 bg-white"
+        className="w-full sm:w-1/2 flex items-center mx-auto my-6 border pl-6 bg-white rounded-full"
       >
         <input
           className="w-full sm:flex-1 outline-none"
@@ -21,7 +21,7 @@ const SubscribeBlock = () => {
           required
         />
         <button
-          className="bg-green-500 text-white text-xs px-10 py-4"
+          className="bg-green-500 text-slate-100 text-xs px-6 py-3 hover:bg-green-300 transition duration-300 rounded-full rounded-s-none"
           type="submit"
         >
           SUBSCRIBE

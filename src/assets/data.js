@@ -1,47 +1,47 @@
-import imgE10080 from "./img/E10080.JPG";
-import imgE10120 from "./img/E10120.JPG";
-import imgE10121 from "./img/E10121.JPG";
-import imgE11040 from "./img/E11040.JPG";
-import imgE16085 from "./img/E16085.JPG";
-import imgE18043 from "./img/E18043.JPG";
-import imgE18052 from "./img/E18052.jpg";
-import imgE20081 from "./img/E20081.JPG";
-import imgE20121 from "./img/E20121.JPG";
-import imgE21122 from "./img/E21122.JPG";
-import imgE21162 from "./img/E21162.jpg";
-import imgE31122 from "./img/E31122.JPG";
-import imgE31162 from "./img/E31162.jpg";
-import imgE50110 from "./img/E50110.JPG";
-import imgE50115 from "./img/E50115.JPG";
-import imgE50120 from "./img/E50120.JPG";
-import imgE50125 from "./img/E50125.JPG";
-import imgE50220 from "./img/E50220.JPG";
-import imgE50230 from "./img/E50230.JPG";
-import imgE50240 from "./img/E50240.JPG";
-import imgE51152 from "./img/E51152.JPG";
-import imgE51154 from "./img/E51154.JPG";
-import imgE51155 from "./img/E51155.JPG";
-import imgE51311 from "./img/E51311.JPG";
-import imgE51312 from "./img/E51312.JPG";
-import imgE51313 from "./img/E51313.JPG";
-import imgE51321 from "./img/E51321.JPG";
-import imgE51350 from "./img/E51350.JPG";
-import imgE51351 from "./img/E51351.JPG";
-import imgE51354 from "./img/E51354.JPG";
-import imgE51355 from "./img/E51355.JPG";
-import imgE51530 from "./img/E51530.jpg";
-import imgE51531 from "./img/E51531.jpg";
-import imgE51532 from "./img/E51532.jpg";
-import imgE51560 from "./img/E51560.JPG";
-import imgE51604 from "./img/E51604.JPG";
-import imgE51605 from "./img/E51605.JPG";
-import imgE51606 from "./img/E51606.JPG";
-import imgE57000 from "./img/E57000.JPG";
-import imgE57001 from "./img/E57001.JPG";
-import imgE57002 from "./img/E57002.JPG";
-import imgE60120 from "./img/E60120.JPG";
-import imgE60122 from "./img/E60122.JPG";
-import imgE60124 from "./img/E60124.JPG";
+import imgE10080 from "./img/E10080.png";
+import imgE10120 from "./img/E10120.png";
+import imgE10121 from "./img/E10121.png";
+import imgE11040 from "./img/E11040.png";
+import imgE16085 from "./img/E16085.png";
+import imgE18043 from "./img/E18043.png";
+import imgE18052 from "./img/E18052.png";
+import imgE20081 from "./img/E20081.png";
+import imgE20121 from "./img/E20121.png";
+import imgE21122 from "./img/E21122.png";
+import imgE21162 from "./img/E21162.png";
+import imgE31122 from "./img/E31122.png";
+import imgE31162 from "./img/E31162.png";
+import imgE50110 from "./img/E50110.png";
+import imgE50115 from "./img/E50115.png";
+import imgE50120 from "./img/E50120.png";
+import imgE50125 from "./img/E50125.png";
+import imgE50220 from "./img/E50220.png";
+import imgE50230 from "./img/E50230.png";
+import imgE50240 from "./img/E50240.png";
+import imgE51152 from "./img/E51152.png";
+import imgE51154 from "./img/E51154.png";
+import imgE51155 from "./img/E51155.png";
+import imgE51311 from "./img/E51311.png";
+import imgE51312 from "./img/E51312.png";
+import imgE51313 from "./img/E51313.png";
+import imgE51321 from "./img/E51321.png";
+import imgE51350 from "./img/E51350.png";
+import imgE51351 from "./img/E51351.png";
+import imgE51354 from "./img/E51354.png";
+import imgE51355 from "./img/E51355.png";
+import imgE51530 from "./img/E51530.png";
+import imgE51531 from "./img/E51531.png";
+import imgE51532 from "./img/E51532.png";
+import imgE51560 from "./img/E51560.png";
+import imgE51604 from "./img/E51604.png";
+import imgE51605 from "./img/E51605.png";
+import imgE51606 from "./img/E51606.png";
+import imgE57000 from "./img/E57000.png";
+import imgE57001 from "./img/E57001.png";
+import imgE57002 from "./img/E57002.png";
+import imgE60120 from "./img/E60120.png";
+import imgE60122 from "./img/E60122.png";
+import imgE60124 from "./img/E60124.png";
 
 export const categories = [
   { _id: "c001", name: "Paper Cups" },
@@ -72,7 +72,7 @@ export const products = [
     caseQty: "500",
     category: "c001",
     feature: "f001",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704412800000,
     price: "29.95",
     description:
@@ -87,7 +87,7 @@ export const products = [
     caseQty: "500",
     category: "c001",
     feature: "f00f001",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704413800000,
     price: "37.75",
     description:
@@ -102,7 +102,7 @@ export const products = [
     caseQty: "500",
     category: "c001",
     feature: "f001",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704422800000,
     price: "37.75",
     description:
@@ -117,7 +117,7 @@ export const products = [
     caseQty: "1000",
     category: "c001",
     feature: "f002",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704412830000,
     price: "18.95",
     description:
@@ -132,7 +132,7 @@ export const products = [
     caseQty: "1000",
     category: "c001",
     feature: "f002",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704414800000,
     price: "48.45",
     description:
@@ -147,7 +147,7 @@ export const products = [
     caseQty: "1000",
     category: "c007",
     feature: "f002",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704412805000,
     price: "9.95",
     description:
@@ -162,7 +162,7 @@ export const products = [
     caseQty: "100",
     category: "c007",
     feature: "f001",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704462800000,
     price: "4.95",
     description:
@@ -177,7 +177,7 @@ export const products = [
     caseQty: "1000",
     category: "c001",
     feature: "f001",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704712800000,
     price: "22.95",
     description:
@@ -192,7 +192,7 @@ export const products = [
     caseQty: "1000",
     category: "c001",
     feature: "f001",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704412800800,
     price: "26.95",
     description:
@@ -207,7 +207,7 @@ export const products = [
     caseQty: "500",
     category: "c005",
     feature: "f001",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704412809000,
     price: "34.95",
     description:
@@ -222,7 +222,7 @@ export const products = [
     caseQty: "500",
     category: "c005",
     feature: "f001",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704562800000,
     price: "37.45",
     description:
@@ -237,7 +237,7 @@ export const products = [
     caseQty: "500",
     category: "c005",
     feature: "f001",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704415800000,
     price: "30.95",
     description:
@@ -252,7 +252,7 @@ export const products = [
     caseQty: "500",
     category: "c005",
     feature: "f001",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704412700000,
     price: "35.45",
     description:
@@ -267,7 +267,7 @@ export const products = [
     caseQty: "500",
     category: "c003",
     feature: "f001",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704422800000,
     price: "61.95",
     description:
@@ -282,7 +282,7 @@ export const products = [
     caseQty: "250",
     category: "c003",
     feature: "f001",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704412880000,
     price: "44.95",
     description:
@@ -297,7 +297,7 @@ export const products = [
     caseQty: "450",
     category: "c003",
     feature: "f002",
-    isOnSale: "TRUE",
+    isOnSale: true,
     dateAdded: 1704412900000,
     price: "42.95",
     description:
@@ -312,7 +312,7 @@ export const products = [
     caseQty: "300",
     category: "c003",
     feature: "f002",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704419800000,
     price: "45.95",
     description:
@@ -327,7 +327,7 @@ export const products = [
     caseQty: "200",
     category: "c008",
     feature: "f001",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704442800000,
     price: "23.99",
     description:
@@ -342,7 +342,7 @@ export const products = [
     caseQty: "200",
     category: "c008",
     feature: "f001",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704412500000,
     price: "32.49",
     description:
@@ -357,7 +357,7 @@ export const products = [
     caseQty: "200",
     category: "c008",
     feature: "f001",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704412860000,
     price: "44.99",
     description:
@@ -372,7 +372,7 @@ export const products = [
     caseQty: "100",
     category: "c004",
     feature: "f001",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704412807000,
     price: "15.95",
     description:
@@ -387,7 +387,7 @@ export const products = [
     caseQty: "100",
     category: "c004",
     feature: "f001",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704412808000,
     price: "20.95",
     description:
@@ -402,7 +402,7 @@ export const products = [
     caseQty: "50",
     category: "c004",
     feature: "f001",
-    isOnSale: "TRUE",
+    isOnSale: true,
     dateAdded: 1704412800800,
     price: "16.95",
     description:
@@ -417,7 +417,7 @@ export const products = [
     caseQty: "500",
     category: "6",
     feature: "f002",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704419800000,
     price: "45.95",
     description:
@@ -432,7 +432,7 @@ export const products = [
     caseQty: "250",
     category: "c006",
     feature: "f002",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704419000000,
     price: "19.95",
     description:
@@ -447,7 +447,7 @@ export const products = [
     caseQty: "250",
     category: "c006",
     feature: "f002",
-    isOnSale: "TRUE",
+    isOnSale: true,
     dateAdded: 1704412803300,
     price: "29.95",
     description:
@@ -462,7 +462,7 @@ export const products = [
     caseQty: "200",
     category: "c006",
     feature: "f002",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704412440000,
     price: "44.95",
     description:
@@ -477,7 +477,7 @@ export const products = [
     caseQty: "1000",
     category: "c002",
     feature: "f002",
-    isOnSale: "TRUE",
+    isOnSale: true,
     dateAdded: 1704415500000,
     price: "33.95",
     description:
@@ -492,7 +492,7 @@ export const products = [
     caseQty: "500",
     category: "c002",
     feature: "f002",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704466800000,
     price: "27.45",
     description:
@@ -507,7 +507,7 @@ export const products = [
     caseQty: "500",
     category: "c002",
     feature: "f002",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704477800000,
     price: "33.45",
     description:
@@ -522,7 +522,7 @@ export const products = [
     caseQty: "250",
     category: "c002",
     feature: "f002",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704412880000,
     price: "27.75",
     description:
@@ -537,7 +537,7 @@ export const products = [
     caseQty: "500",
     category: "c010",
     feature: "f001",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704499800000,
     price: "16.95",
     description:
@@ -552,7 +552,7 @@ export const products = [
     caseQty: "500",
     category: "c010",
     feature: "f001",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704433300000,
     price: "17.45",
     description:
@@ -567,7 +567,7 @@ export const products = [
     caseQty: "500",
     category: "c010",
     feature: "f001",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704414440000,
     price: "18.95",
     description:
@@ -582,7 +582,7 @@ export const products = [
     caseQty: "1000",
     category: "c010",
     feature: "f002",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704552800000,
     price: "32.95",
     description:
@@ -597,7 +597,7 @@ export const products = [
     caseQty: "250",
     category: "c009",
     feature: "f001",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704662800000,
     price: "57.45",
     description:
@@ -612,7 +612,7 @@ export const products = [
     caseQty: "250",
     category: "c009",
     feature: "f001",
-    isOnSale: "TRUE",
+    isOnSale: true,
     dateAdded: 1704412846000,
     price: "69.95",
     description:
@@ -627,7 +627,7 @@ export const products = [
     caseQty: "250",
     category: "c009",
     feature: "f001",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704435800000,
     price: "69.95",
     description:
@@ -642,7 +642,7 @@ export const products = [
     caseQty: "250",
     category: "c011",
     feature: "f001",
-    isOnSale: "TRUE",
+    isOnSale: true,
     dateAdded: 1704415700000,
     price: "19.95",
     description:
@@ -657,7 +657,7 @@ export const products = [
     caseQty: "250",
     category: "c011",
     feature: "f001",
-    isOnSale: "TRUE",
+    isOnSale: true,
     dateAdded: 1704425800000,
     price: "13.45",
     description:
@@ -672,7 +672,7 @@ export const products = [
     caseQty: "2000",
     category: "c012",
     feature: "f001",
-    isOnSale: "FALSE",
+    isOnSale: false,
     dateAdded: 1704358800000,
     price: "24.95",
     description:
@@ -687,7 +687,7 @@ export const products = [
     caseQty: "2000",
     category: "c012",
     feature: "f001",
-    isOnSale: "TRUE",
+    isOnSale: true,
     dateAdded: 1704432800000,
     price: "16.95",
     description:
@@ -702,7 +702,7 @@ export const products = [
     caseQty: "2000",
     category: "c012",
     feature: "f001",
-    isOnSale: "TRUE",
+    isOnSale: true,
     dateAdded: 1704745800000,
     price: "17.95",
     description:
@@ -712,12 +712,12 @@ export const products = [
   {
     _id: "a040",
     sku: "E60122",
-    name: "Small SOS Paper Bag Kraft",
+    name: "Medium SOS Paper Bag Kraft",
     color: "Kraft",
     caseQty: "250",
     category: "c011",
     feature: "f001",
-    isOnSale: "TRUE",
+    isOnSale: true,
     dateAdded: 1704469200000,
     price: "16.45",
     description:

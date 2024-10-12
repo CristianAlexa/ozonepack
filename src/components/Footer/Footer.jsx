@@ -60,7 +60,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-full font-light text-slate-100 text-xs sm:text-center py-8">
-        Copyright © 2024 Ozone Pack - All right reserved.
+        Copyright © {new Date().getFullYear()} Ozone Pack - All right reserved.
       </div>
     </>
   );
