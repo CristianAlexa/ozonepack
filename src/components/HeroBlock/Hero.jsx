@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import heroImg from "../assets/pictures/hero_img.png";
+import heroImg from "../../assets/pictures/hero_img.png";
 
-const Hero = () => {
+const HeroBlock = () => {
   return (
     <section className="flex flex-col sm:flex-row border border-gray-300">
       {/* Hero left side */}
@@ -29,4 +29,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HeroBlock;

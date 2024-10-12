@@ -2,16 +2,35 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { OzoneContext } from "../context/OzoneContext";
 
-const ProductThumb = ({ sku, img, id, name, price }) => {
+//icons
+import { GiRecycle } from "react-icons/gi";
+import { MdCompost } from "react-icons/md";
+
+const ProductThumb = ({ sku, img, id, name, price, feature }) => {
   const { currency } = useContext(OzoneContext);
   return (
-    <Link className="text-slate-500 border-slate-100 " to={`/product/${id}`}>
+    <Link
+      className="text-slate-500 border-slate-100 px-2"
+      to={`/product/${id}`}
+    >
       <div className="cursor-pointer flex flex-col gap-4">
-        <img
-          className="hover:shadow-lg hover:scale-105 transition ease-in-out"
-          src={img}
-          alt={sku}
-        />
+        <div className="relative">
+          <img
+            className="hover:shadow-lg hover:scale-105 transition ease-in-out"
+            src={img}
+            alt={sku}
+          />
+          <div className="group absolute bottom-2 left-2 p-2 rounded border border-slate-200">
+            {feature === "recyclable" ? (
+              <GiRecycle className="text-slate-500 text-xl" />
+            ) : (
+              <MdCompost className="text-slate-500 text-xl" />
+            )}
+            <div className="group-hover:block hidden absolute bottom-1 left-10 p-1 rounded border border-slate-200 text-sm archivo">
+              {feature}
+            </div>
+          </div>
+        </div>
         <div className="p-2">
           <p className="text-green-500 text-xs">{sku}</p>
           <h3 className="pt-3 pb-1 text-slate-700">{name}</h3>

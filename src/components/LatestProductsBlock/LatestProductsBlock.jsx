@@ -10,7 +10,7 @@ const LatestProductsBlock = () => {
 
   useEffect(() => {
     const sortedProducts = products.sort((a, b) => b.dateAdded - a.dateAdded);
-    setLatestProducts(sortedProducts.slice(0, 5));
+    setLatestProducts(sortedProducts.slice(0, 4));
   }, []);
 
   return (
@@ -19,7 +19,7 @@ const LatestProductsBlock = () => {
         <SectionTitle>LATEST PRODUCTS</SectionTitle>
       </div>
       {/* Rendering Products */}
-      <div className="py-8 grid grid-cols-2 sm:grig-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 gap-y-6">
+      <div className="py-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 gap-y-6">
         {latestProducts.map((prod, index) => (
           <ProductThumb
             key={index}
@@ -28,6 +28,7 @@ const LatestProductsBlock = () => {
             id={prod._id}
             name={prod.name}
             price={prod.price}
+            feature={prod.feature}
           />
         ))}
       </div>

@@ -5,13 +5,13 @@ import SectionTitle from "../SectionTitle";
 import ProductThumb from "../ProductThumb";
 import { Link } from "react-router-dom";
 
-const OnSale = () => {
+const OnSaleBlock = () => {
   const { products } = useContext(OzoneContext);
   const [onSale, setOnSale] = useState([]);
 
   useEffect(() => {
     const onSaleProducts = products.filter((prod) => prod.isOnSale);
-    setOnSale(onSaleProducts.slice(0, 5));
+    setOnSale(onSaleProducts.slice(0, 4));
   }, []);
 
   return (
@@ -20,7 +20,7 @@ const OnSale = () => {
         <SectionTitle>ON SALE NOW</SectionTitle>
       </div>
       {/* Rendering Products */}
-      <div className="py-8 grid grid-cols-2 sm:grig-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 gap-y-6">
+      <div className="py-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 gap-y-6">
         {onSale.map((prod, index) => (
           <ProductThumb
             key={index}
@@ -29,6 +29,7 @@ const OnSale = () => {
             id={prod._id}
             name={prod.name}
             price={prod.price}
+            feature={prod.feature}
           />
         ))}
       </div>
@@ -45,4 +46,4 @@ const OnSale = () => {
   );
 };
 
-export default OnSale;
+export default OnSaleBlock;

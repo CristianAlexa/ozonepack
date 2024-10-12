@@ -1,21 +1,21 @@
 import Section from "../components/Section";
-import Hero from "../components/Hero";
-import SubscribeBlock from "../components/SubscribeBlock";
+import SubscribeBlock from "../components/SubscribeBlock/SubscribeBlock";
 import LatestProductsBlock from "../components/LatestProductsBlock/LatestProductsBlock";
-import OnSale from "../components/OnSale/OnSale";
+import OnSaleBlock from "../components/OnSaleBlock/OnSaleBlock";
 import Highlights from "../components/Highlights/Highlights";
+import HeroBlock from "../components/HeroBlock/Hero";
 
 const Home = () => {
   return (
     <>
       <Section>
-        <Hero />
+        <HeroBlock />
       </Section>
       <Section>
         <LatestProductsBlock />
       </Section>
       <Section bgColor={"bg-slate-50"}>
-        <OnSale />
+        <OnSaleBlock />
       </Section>
       <Section>
         <Highlights />
