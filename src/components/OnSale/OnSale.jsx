@@ -3,6 +3,7 @@ import { OzoneContext } from "../../context/OzoneContext";
 
 import SectionTitle from "../SectionTitle";
 import ProductThumb from "../ProductThumb";
+import { Link } from "react-router-dom";
 
 const OnSale = () => {
   const { products } = useContext(OzoneContext);
@@ -14,7 +15,7 @@ const OnSale = () => {
   }, []);
 
   return (
-    <>
+    <div className="flex flex-col gap-2 pb-8">
       <div className="text-center">
         <SectionTitle>ON SALE NOW</SectionTitle>
       </div>
@@ -31,7 +32,16 @@ const OnSale = () => {
           />
         ))}
       </div>
-    </>
+      {/* update link */}
+      <div className="text-center">
+        <Link
+          to="/"
+          className="mt-8 text-sm px-6 py-2 bg-green-500 rounded-full text-center text-slate-100 hover:bg-green-300 transition duration-300"
+        >
+          VIEW ALL
+        </Link>
+      </div>
+    </div>
   );
 };
 
