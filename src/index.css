@@ -1,3 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  font-family: Outfit, sans-serif;
+}
+
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+a.active > hr {
+  display: block;
+}
+
+.economica {
+  font-family: Economica, sans-serif;
+}
+
+.prata-regular {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.archivo {
+  font-family: "Archivo Narrow", sans-serif;
+}
