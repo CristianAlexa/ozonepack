@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 
 //context
-import { OzoneContext } from "../context/OzoneContext";
+import { OzoneContext } from "../../context/OzoneContext";
 
 //components
 import FilterBlock from "./FilterBlock";
@@ -17,13 +17,6 @@ const Filters = ({ displayedProducts }) => {
 
   const [filteredCateg, setFilteredCateg] = useState([]);
   const [filteredFeatures, setFilteredFeatures] = useState([]);
-
-  const handleFilterList = (e) => {
-    console.log(e.target.parentNode.id);
-    setAllFilters((prev) =>
-      prev.filter((item) => item !== e.target.parentNode.id)
-    );
-  };
 
   useEffect(() => {
     const categories = [
@@ -49,10 +42,8 @@ const Filters = ({ displayedProducts }) => {
             <li
               key={index}
               id={item}
-              className="flex gap-1 items-center cursor-pointer py-1 px-2 rounded bg-slate-100"
-              onClick={handleFilterList}
+              className="flex gap-1 items-center py-1 px-2 rounded bg-slate-100"
             >
-              <IoMdClose />
               <span className="text-sm">{item}</span>
             </li>
           ))}

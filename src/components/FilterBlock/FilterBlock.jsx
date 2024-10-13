@@ -1,8 +1,8 @@
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 //icons
 import { IoIosArrowDown } from "react-icons/io";
-import FilterItem from "./FilterItem";
+import FilterItem from "../FilterBlock/FilterItem";
 
 const FilterBlock = ({ itemList, title, setFilteredItems }) => {
   const [isOpen, setIsOpen] = useState(false);
