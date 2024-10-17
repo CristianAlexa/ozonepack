@@ -28,10 +28,6 @@ const Products = () => {
         filteredFeatures.includes(prod.feature)
       );
 
-    console.log(allFilters);
-    console.log(filteredFeatures);
-    console.log(productsCopy);
-
     setDisplayedProducts(productsCopy);
   };
 

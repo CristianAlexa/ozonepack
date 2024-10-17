@@ -7,22 +7,12 @@ import { OzoneContext } from "../../context/OzoneContext";
 import FilterBlock from "./FilterBlock";
 
 const Filters = () => {
-  const { products } = useContext(OzoneContext);
+  const { products, categories, features } = useContext(OzoneContext);
   const {
     setFilteredCateg,
 
     setFilteredFeatures,
   } = useContext(OzoneContext);
-
-  const [displayedCateg, setdisplayedCateg] = useState([]);
-  const [displayedFeatures, setdisplayedFeatures] = useState([]);
-
-  useEffect(() => {
-    const categories = [...new Set(products.map((prod) => prod.category))];
-    const features = [...new Set(products.map((prod) => prod.feature))];
-    setdisplayedCateg(categories);
-    setdisplayedFeatures(features);
-  }, [products]);
 
   return (
     <div className="flex flex-col gap-4 min-w-60 mb-8">
@@ -40,20 +30,17 @@ const Filters = () => {
           ))}
         </ul> */}
       </div>
-      {displayedCateg && (
-        <FilterBlock
-          itemList={displayedCateg}
-          title={"Categories"}
-          setFilteredItems={setFilteredCateg}
-        />
-      )}
-      {displayedFeatures && (
-        <FilterBlock
-          itemList={displayedFeatures}
-          title={"Features"}
-          setFilteredItems={setFilteredFeatures}
-        />
-      )}
+
+      <FilterBlock
+        itemList={categories}
+        title={"Categories"}
+        setFilteredItems={setFilteredCateg}
+      />
+      <FilterBlock
+        itemList={features}
+        title={"Features"}
+        setFilteredItems={setFilteredFeatures}
+      />
     </div>
   );
 };

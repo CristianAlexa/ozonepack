@@ -58,7 +58,7 @@ export const categories = [
   "Napkins",
 ];
 
-export const productFeatures = ["Recyclable", "Compostable"];
+export const features = ["Recyclable", "Compostable"];
 
 export const products = [
   {
