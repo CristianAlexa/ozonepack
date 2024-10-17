@@ -8,9 +8,9 @@ import { IoIosClose } from "react-icons/io";
 const MobileMenu = ({ isVisible, handleMobileMenuClick }) => {
   return (
     <menu
-      className={`flex flex-col w-full h-full absolute top-0 ${
-        isVisible ? "right-[0]" : "right-[-100%]"
-      } sm:hidden z-10 bg-white ease-in duration-150`}
+      className={`flex flex-col h-full absolute top-0 right-0 overflow-hidden ${
+        isVisible ? "w-full" : "w-0"
+      } sm:hidden z-20 bg-white ease-in duration-150`}
     >
       <button className="bg-transparent border-b py-3 px-6 border-slate-100">
         <IoIosClose

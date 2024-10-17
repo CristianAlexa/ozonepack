@@ -11,7 +11,7 @@ import SectionTitle from "../components/SectionTitle";
 import ProductThumb from "../components/ProductThumb";
 
 const Products = () => {
-  const { products, filteredCateg, filteredFeatures, search } =
+  const { products, filteredCateg, filteredFeatures, search, setSearch } =
     useContext(OzoneContext);
   const [displayedProducts, setDisplayedProducts] = useState([]);
   const [sortCondition, setSortCondition] = useState("relevant");
@@ -67,6 +67,14 @@ const Products = () => {
             <div className="pb-8">
               <SectionTitle>PRODUCTS</SectionTitle>
             </div>
+            {search.length > 0 && (
+              <button
+                onClick={() => setSearch("")}
+                className="mt-8 text-sm px-6 py-2 bg-green-500 rounded-full text-center text-slate-100 hover:bg-green-300 transition duration-300"
+              >
+                Reset search
+              </button>
+            )}
             <div className="flex justify-between items-center w-full py-1 mb-4">
               <div>{displayedProducts.length} products found</div>
               <div>
