@@ -19,8 +19,6 @@ const FilterBlock = ({ itemList, title, setFilteredItems }) => {
       : setFilterArr((prev) => [...prev, id]);
   };
 
-  console.log(filterArr);
-
   useEffect(() => {
     setFilteredItems(filterArr);
   }, [filterArr]);

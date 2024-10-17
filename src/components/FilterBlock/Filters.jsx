@@ -6,35 +6,29 @@ import { OzoneContext } from "../../context/OzoneContext";
 //components
 import FilterBlock from "./FilterBlock";
 
-const Filters = ({ displayedProducts }) => {
-  const { allFilters, setAllFilters } = useContext(OzoneContext);
+const Filters = () => {
+  const { products } = useContext(OzoneContext);
+  const {
+    setFilteredCateg,
+
+    setFilteredFeatures,
+  } = useContext(OzoneContext);
 
   const [displayedCateg, setdisplayedCateg] = useState([]);
   const [displayedFeatures, setdisplayedFeatures] = useState([]);
 
-  const [filteredCateg, setFilteredCateg] = useState([]);
-  const [filteredFeatures, setFilteredFeatures] = useState([]);
-
   useEffect(() => {
-    const categories = [
-      ...new Set(displayedProducts.map((prod) => prod.category)),
-    ];
-    const features = [
-      ...new Set(displayedProducts.map((prod) => prod.feature)),
-    ];
+    const categories = [...new Set(products.map((prod) => prod.category))];
+    const features = [...new Set(products.map((prod) => prod.feature))];
     setdisplayedCateg(categories);
     setdisplayedFeatures(features);
-  }, [displayedProducts]);
-
-  useEffect(() => {
-    setAllFilters([...filteredCateg, ...filteredFeatures]);
-  }, [filteredCateg, filteredFeatures]);
+  }, [products]);
 
   return (
     <div className="flex flex-col gap-4 min-w-60 mb-8">
       <div className="w-full border-b border-slate-700">
         <p className="text-lg archivo pb-2">FILTERS</p>
-        <ul className="flex flex-wrap gap-2 mb-4">
+        {/* <ul className="flex flex-wrap gap-2 mb-4">
           {allFilters.map((item, index) => (
             <li
               key={index}
@@ -44,7 +38,7 @@ const Filters = ({ displayedProducts }) => {
               <span className="text-sm">{item}</span>
             </li>
           ))}
-        </ul>
+        </ul> */}
       </div>
       {displayedCateg && (
         <FilterBlock

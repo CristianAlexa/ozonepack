@@ -4,6 +4,9 @@ import { createContext, useState } from "react";
 export const OzoneContext = createContext();
 
 const OzoneContextProvider = (props) => {
+  const [filteredCateg, setFilteredCateg] = useState([]);
+  const [filteredFeatures, setFilteredFeatures] = useState([]);
+
   const [allFilters, setAllFilters] = useState([]);
 
   const currency = "£";
@@ -14,6 +17,10 @@ const OzoneContextProvider = (props) => {
     productFeatures,
     allFilters,
     setAllFilters,
+    filteredCateg,
+    setFilteredCateg,
+    filteredFeatures,
+    setFilteredFeatures,
   };
 
   return (

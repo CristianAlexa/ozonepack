@@ -11,15 +11,40 @@ import SectionTitle from "../components/SectionTitle";
 import ProductThumb from "../components/ProductThumb";
 
 const Products = () => {
-  const { products } = useContext(OzoneContext);
-  const [displayedProducts, setDisplayedProducts] = useState(products);
+  const { products, allFilters, filteredCateg, filteredFeatures } =
+    useContext(OzoneContext);
+  const [displayedProducts, setDisplayedProducts] = useState([]);
+
+  const applyFilters = () => {
+    let productsCopy = products.slice();
+
+    if (filteredCateg.length > 0)
+      productsCopy = productsCopy.filter((prod) =>
+        filteredCateg.includes(prod.category)
+      );
+
+    if (filteredFeatures.length > 0)
+      productsCopy = productsCopy.filter((prod) =>
+        filteredFeatures.includes(prod.feature)
+      );
+
+    console.log(allFilters);
+    console.log(filteredFeatures);
+    console.log(productsCopy);
+
+    setDisplayedProducts(productsCopy);
+  };
+
+  useEffect(() => {
+    applyFilters();
+  }, [filteredCateg, filteredFeatures]);
 
   return (
     <>
       <Section>
         <div className="flex flex-col sm:flex-row gap-4 pt-10 border-t items-start">
           {/* Left section - filters */}
-          <Filters displayedProducts={displayedProducts} />
+          <Filters products={displayedProducts} />
           {/* Right section - display products */}
           <div>
             <SectionTitle>LATEST PRODUCTS</SectionTitle>
