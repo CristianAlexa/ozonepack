@@ -11,7 +11,7 @@ import SectionTitle from "../components/SectionTitle";
 import ProductThumb from "../components/ProductThumb";
 
 const Products = () => {
-  const { products, filteredCateg, filteredFeatures, displayOnSale } =
+  const { products, filteredCateg, filteredFeatures } =
     useContext(OzoneContext);
   const [displayedProducts, setDisplayedProducts] = useState([]);
 

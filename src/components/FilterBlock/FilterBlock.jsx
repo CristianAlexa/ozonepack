@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 
 //icons
 import { IoIosArrowDown } from "react-icons/io";
-import FilterItem from "../FilterBlock/FilterItem";
 
 const FilterBlock = ({ itemList, title, setFilteredItems }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,12 +39,10 @@ const FilterBlock = ({ itemList, title, setFilteredItems }) => {
         }`}
       >
         {itemList.map((item, index) => (
-          <FilterItem
-            key={index}
-            name={item}
-            handleItemClick={handleItemClick}
-            className="flex gap-2 items-center py-1"
-          />
+          <div key={index} className="flex gap-2 items-center py-1">
+            <input id={item} type="checkbox" onChange={handleItemClick} />
+            <p>{item}</p>
+          </div>
         ))}
       </div>
     </section>
