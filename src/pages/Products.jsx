@@ -11,9 +11,12 @@ import SectionTitle from "../components/SectionTitle";
 import ProductThumb from "../components/ProductThumb";
 
 const Products = () => {
-  const { products, filteredCateg, filteredFeatures } =
+  const { products, filteredCateg, filteredFeatures, search } =
     useContext(OzoneContext);
   const [displayedProducts, setDisplayedProducts] = useState([]);
+  const [sortCondition, setSortCondition] = useState("relevant");
+
+  const handleSortChange = (e) => setSortCondition(e.target.value);
 
   const applyFilters = () => {
     let productsCopy = products.slice();
@@ -34,9 +37,22 @@ const Products = () => {
     setDisplayedProducts(productsCopy);
   };
 
+  const sortProducts = () => {
+    let productsCopy = displayedProducts.slice();
+
+    sortCondition === "low-hight"
+      ? setDisplayedProducts(productsCopy.sort((a, b) => a.price - b.price))
+      : sortCondition === "hight-low"
+      ? setDisplayedProducts(productsCopy.sort((a, b) => b.price - a.price))
+      : applyFilters();
+  };
+
   useEffect(() => {
     applyFilters();
+    console.log(search);
   }, [filteredCateg, filteredFeatures]);
+
+  useEffect(() => sortProducts(), [sortCondition]);
 
   return (
     <>
@@ -45,9 +61,23 @@ const Products = () => {
           {/* Left section - filters */}
           <Filters products={displayedProducts} />
           {/* Right section - display products */}
-          <div>
-            <SectionTitle>LATEST PRODUCTS</SectionTitle>
-            <div>sort by</div>
+          <div className="w-full text-center">
+            <div className="pb-8">
+              <SectionTitle>PRODUCTS</SectionTitle>
+            </div>
+            <div className="flex justify-between items-center w-full py-1 mb-4">
+              <div>{displayedProducts.length} products found</div>
+              <div>
+                <select
+                  onChange={(e) => handleSortChange(e)}
+                  className="border border-slate-200 text-sm p-2"
+                >
+                  <option value="relevant">Sort by: Relevance</option>
+                  <option value="low-hight">Sort by: Low to Hight</option>
+                  <option value="hight-low">Sort by: Hight to Low</option>
+                </select>
+              </div>
+            </div>
             <div className="pb-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 gap-y-6">
               {displayedProducts.map((prod, index) => (
                 <ProductThumb

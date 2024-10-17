@@ -21,7 +21,7 @@ const ProductThumb = ({ sku, img, id, name, price, feature }) => {
             alt={sku}
           />
           <div className="group absolute bottom-2 left-2 p-1 rounded border border-slate-200 bg-white">
-            {feature === "recyclable" ? (
+            {feature === "Recyclable" ? (
               <GiRecycle className="text-slate-500 text-xl" />
             ) : (
               <MdCompost className="text-slate-500 text-xl" />

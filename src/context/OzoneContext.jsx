@@ -7,6 +7,7 @@ const OzoneContextProvider = (props) => {
   const [filteredCateg, setFilteredCateg] = useState([]);
   const [filteredFeatures, setFilteredFeatures] = useState([]);
   const [displayOnSale, setDisplayOnSale] = useState(false);
+  const [search, setSearch] = useState("");
 
   const currency = "£";
   const value = {
@@ -14,6 +15,8 @@ const OzoneContextProvider = (props) => {
     products,
     categories,
     features,
+    search,
+    setSearch,
     displayOnSale,
     setDisplayOnSale,
     filteredCateg,
