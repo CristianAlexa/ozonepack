@@ -13,7 +13,7 @@ const FilterBlock = ({ itemList, title, setFilteredItems }) => {
   };
 
   const handleItemClick = (e) => {
-    const { id, name, type, checked } = e.target;
+    const { id } = e.target;
     filterArr.includes(id)
       ? setFilterArr((prev) => prev.filter((el) => el !== id))
       : setFilterArr((prev) => [...prev, id]);

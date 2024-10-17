@@ -11,22 +11,25 @@ import SectionTitle from "../components/SectionTitle";
 import ProductThumb from "../components/ProductThumb";
 
 const Products = () => {
-  const { products, allFilters, filteredCateg, filteredFeatures } =
+  const { products, filteredCateg, filteredFeatures, displayOnSale } =
     useContext(OzoneContext);
   const [displayedProducts, setDisplayedProducts] = useState([]);
 
   const applyFilters = () => {
     let productsCopy = products.slice();
 
-    if (filteredCateg.length > 0)
-      productsCopy = productsCopy.filter((prod) =>
-        filteredCateg.includes(prod.category)
-      );
+    // displayOnSale &&
+    //   (productsCopy = productsCopy.filter((prod) => prod.isOnSale));
 
-    if (filteredFeatures.length > 0)
-      productsCopy = productsCopy.filter((prod) =>
+    filteredCateg.length > 0 &&
+      (productsCopy = productsCopy.filter((prod) =>
+        filteredCateg.includes(prod.category)
+      ));
+
+    filteredFeatures.length > 0 &&
+      (productsCopy = productsCopy.filter((prod) =>
         filteredFeatures.includes(prod.feature)
-      );
+      ));
 
     setDisplayedProducts(productsCopy);
   };

@@ -6,8 +6,10 @@ import ProductThumb from "../ProductThumb";
 import { Link } from "react-router-dom";
 
 const OnSaleBlock = () => {
-  const { products } = useContext(OzoneContext);
+  const { products, setDisplayOnSale } = useContext(OzoneContext);
   const [onSale, setOnSale] = useState([]);
+
+  const handleViewAllClick = () => setDisplayOnSale(true);
 
   useEffect(() => {
     const onSaleProducts = products.filter((prod) => prod.isOnSale);
@@ -36,8 +38,9 @@ const OnSaleBlock = () => {
       {/* update link */}
       <div className="text-center pb-8">
         <Link
-          to="/"
+          to="/products"
           className="mt-8 text-sm px-6 py-2 bg-green-500 rounded-full text-center text-slate-100 hover:bg-green-300 transition duration-300"
+          onClick={handleViewAllClick}
         >
           VIEW ALL
         </Link>

@@ -7,12 +7,8 @@ import { OzoneContext } from "../../context/OzoneContext";
 import FilterBlock from "./FilterBlock";
 
 const Filters = () => {
-  const { products, categories, features } = useContext(OzoneContext);
-  const {
-    setFilteredCateg,
-
-    setFilteredFeatures,
-  } = useContext(OzoneContext);
+  const { categories, features } = useContext(OzoneContext);
+  const { setFilteredCateg, setFilteredFeatures } = useContext(OzoneContext);
 
   return (
     <div className="flex flex-col gap-4 min-w-60 mb-8">
@@ -30,7 +26,6 @@ const Filters = () => {
           ))}
         </ul> */}
       </div>
-
       <FilterBlock
         itemList={categories}
         title={"Categories"}

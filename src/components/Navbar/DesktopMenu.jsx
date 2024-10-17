@@ -2,6 +2,8 @@ import { NavLink } from "react-router-dom";
 import { mainMenu } from "../../assets/mainMenu";
 import { capitalise } from "../../utils/utils";
 
+//context
+
 const DesktopMenu = () => {
   return (
     <menu className="hidden sm:flex gap-2">
