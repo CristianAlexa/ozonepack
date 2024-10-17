@@ -21,8 +21,10 @@ const Products = () => {
   const applyFilters = () => {
     let productsCopy = products.slice();
 
-    // displayOnSale &&
-    //   (productsCopy = productsCopy.filter((prod) => prod.isOnSale));
+    search.length > 0 &&
+      (productsCopy = productsCopy.filter((prod) =>
+        prod.name.toLowerCase().includes(search.toLowerCase())
+      ));
 
     filteredCateg.length > 0 &&
       (productsCopy = productsCopy.filter((prod) =>
@@ -50,7 +52,7 @@ const Products = () => {
   useEffect(() => {
     applyFilters();
     console.log(search);
-  }, [filteredCateg, filteredFeatures]);
+  }, [filteredCateg, filteredFeatures, search]);
 
   useEffect(() => sortProducts(), [sortCondition]);
 
