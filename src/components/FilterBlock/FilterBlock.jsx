@@ -13,10 +13,13 @@ const FilterBlock = ({ itemList, title, setFilteredItems }) => {
   };
 
   const handleItemClick = (e) => {
-    filterArr.includes(e.target.name)
-      ? setFilterArr((prev) => prev.filter((el) => el !== e.target.name))
-      : setFilterArr((prev) => [...prev, e.target.name]);
+    const { id, name, type, checked } = e.target;
+    filterArr.includes(id)
+      ? setFilterArr((prev) => prev.filter((el) => el !== id))
+      : setFilterArr((prev) => [...prev, id]);
   };
+
+  console.log(filterArr);
 
   useEffect(() => {
     setFilteredItems(filterArr);

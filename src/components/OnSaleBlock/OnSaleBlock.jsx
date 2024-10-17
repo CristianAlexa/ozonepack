@@ -16,11 +16,11 @@ const OnSaleBlock = () => {
 
   return (
     <div className="flex flex-col gap-2 pb-8">
-      <div className="text-center">
+      <div className="text-center py-10">
         <SectionTitle>ON SALE NOW</SectionTitle>
       </div>
       {/* Rendering Products */}
-      <div className="py-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 gap-y-6">
+      <div className="pb-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 gap-y-6">
         {onSale.map((prod, index) => (
           <ProductThumb
             key={index}
@@ -34,7 +34,7 @@ const OnSaleBlock = () => {
         ))}
       </div>
       {/* update link */}
-      <div className="text-center">
+      <div className="text-center pb-8">
         <Link
           to="/"
           className="mt-8 text-sm px-6 py-2 bg-green-500 rounded-full text-center text-slate-100 hover:bg-green-300 transition duration-300"

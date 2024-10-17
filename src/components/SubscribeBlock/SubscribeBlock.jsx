@@ -3,7 +3,7 @@ const SubscribeBlock = () => {
     e.preventDefault();
   };
   return (
-    <div className="text-center py-8">
+    <div className="text-center py-12">
       <p className="text-2xl font-medium text-gray-500">
         Subscribe now & get 10% off
       </p>

@@ -15,11 +15,11 @@ const LatestProductsBlock = () => {
 
   return (
     <>
-      <div className="text-center">
+      <div className="text-center py-10">
         <SectionTitle>LATEST PRODUCTS</SectionTitle>
       </div>
       {/* Rendering Products */}
-      <div className="py-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 gap-y-6">
+      <div className="pb-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 gap-y-6">
         {latestProducts.map((prod, index) => (
           <ProductThumb
             key={index}

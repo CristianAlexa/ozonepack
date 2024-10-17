@@ -6,9 +6,6 @@ import { OzoneContext } from "../../context/OzoneContext";
 //components
 import FilterBlock from "./FilterBlock";
 
-//icons
-import { IoMdClose } from "react-icons/io";
-
 const Filters = ({ displayedProducts }) => {
   const { allFilters, setAllFilters } = useContext(OzoneContext);
 
@@ -34,7 +31,7 @@ const Filters = ({ displayedProducts }) => {
   }, [filteredCateg, filteredFeatures]);
 
   return (
-    <div className="flex flex-col gap-4 w-60 mb-8">
+    <div className="flex flex-col gap-4 min-w-60 mb-8">
       <div className="w-full border-b border-slate-700">
         <p className="text-lg archivo pb-2">FILTERS</p>
         <ul className="flex flex-wrap gap-2 mb-4">

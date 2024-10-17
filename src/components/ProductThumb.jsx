@@ -20,13 +20,13 @@ const ProductThumb = ({ sku, img, id, name, price, feature }) => {
             src={img}
             alt={sku}
           />
-          <div className="group absolute bottom-2 left-2 p-2 rounded border border-slate-200">
+          <div className="group absolute bottom-2 left-2 p-1 rounded border border-slate-200 bg-white">
             {feature === "recyclable" ? (
               <GiRecycle className="text-slate-500 text-xl" />
             ) : (
               <MdCompost className="text-slate-500 text-xl" />
             )}
-            <div className="group-hover:block hidden absolute bottom-1 left-10 p-1 rounded border border-slate-200 text-sm archivo">
+            <div className="group-hover:block hidden absolute bottom-1 left-8 px-1 rounded border border-slate-200 text-sm bg-white archivo">
               {feature}
             </div>
           </div>

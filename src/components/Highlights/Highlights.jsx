@@ -4,7 +4,7 @@ import { MdOutlinePlaylistAddCheckCircle } from "react-icons/md";
 
 const Highlights = () => {
   return (
-    <section className="flex flex-col sm:flex-row justify-around gap-12 sm:gap-4 text-center py-20 text-xs sm:text-sm md:text-base ">
+    <section className="flex flex-col sm:flex-row justify-around gap-12 sm:gap-4 text-center py-12 text-xs sm:text-sm md:text-base ">
       <div>
         <RiExchangeFundsFill className="m-auto text-5xl mb-5 text-green-500" />
         <h3 className="text-xl mb-5 text-slate-700 archivo">
