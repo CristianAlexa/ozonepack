@@ -89,9 +89,9 @@ const Products = () => {
               </div>
             </div>
             <div className="pb-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 gap-y-6">
-              {displayedProducts.map((prod, index) => (
+              {displayedProducts.map((prod) => (
                 <ProductThumb
-                  key={index}
+                  key={prod._id}
                   sku={prod.sku}
                   img={prod.img}
                   id={prod._id}

@@ -1,4 +1,4 @@
-import { products, categories, features } from "../assets/data";
+import { products, categories, features, faq } from "../assets/data";
 import { createContext, useState } from "react";
 
 export const OzoneContext = createContext();
@@ -15,6 +15,7 @@ const OzoneContextProvider = (props) => {
     products,
     categories,
     features,
+    faq,
     search,
     setSearch,
     displayOnSale,

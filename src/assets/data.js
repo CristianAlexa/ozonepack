@@ -60,6 +60,39 @@ export const categories = [
 
 export const features = ["Recyclable", "Compostable"];
 
+export const faq = [
+  {
+    _id: "001",
+    question: "Can I request samples of Ozone Pack products?",
+    answer:
+      "Yes, we do offer samples of our products free of charge. Please note that depending on the method of delivery i.e. DPD or Post, there might be a nominal delivery charge applicable for sending the samples. You can request samples by submitting the samples request form located on the samples page using the relevant product codes.",
+  },
+  {
+    _id: "002",
+    question: "Is there a minimum order quantity for Ozone Pack products?",
+    answer:
+      "There is no minimum order quantity (MOQ) for our standard packaging/stock lines. However, when placing orders for branded or bespoke packaging, a minimum order quantity requirement applies. For additional details, please feel free to contact us.",
+  },
+  {
+    _id: "003",
+    question: "Are there any shipping fees associated with Ozone Pack orders?",
+    answer:
+      "Ozone Pack provides free delivery to UK mainland addresses for orders exceeding a minimum total value of £99 excluding VAT. For orders below this threshold, a standard non-refundable delivery charge of £6.99 (plus VAT) is applicable.",
+  },
+  {
+    _id: "004",
+    question: "What is the estimated delivery time for Ozone Pack orders?",
+    answer:
+      "Ozone Pack aims to deliver UK Mainland orders completed before 1.00 pm within 1-2 working days, excluding public bank holidays. Larger bulk orders exceeding courier rates may be delivered by pallet within 2-3 working days. We also offer a next-day pallet delivery service for which there is an additional charge. Delays due to unforeseen circumstances may occur, and customers are advised to plan accordingly.",
+  },
+  {
+    _id: "005",
+    question: "What is the return policy for Ozone Pack products?",
+    answer:
+      "We accept returns for goods that are in resalable condition, similar to their state upon delivery. Prior written confirmation and arrangement are necessary for returns.Please note that arranging a collection will incur a minimum courier collection of £20.00 plus VAT and 20% restocking fee. The courier collection charge will vary according to the size of the order. Notification of any return requests must be made within 14 working days from receipt of your order.",
+  },
+];
+
 export const products = [
   {
     _id: "a001",
