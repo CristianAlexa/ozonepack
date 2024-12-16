@@ -11,6 +11,8 @@ import About from "./pages/About";
 import Products from "./pages/Products";
 import Contact from "./pages/Contact";
 import Faq from "./pages/Faq";
+import Privacy from "./pages/Privacy";
+import Delivery from "./pages/Delivery";
 
 // layouts
 import RootLayout from "./layouts/RootLayout";
@@ -23,6 +25,8 @@ const router = createBrowserRouter(
       <Route path="products" element={<Products />} />
       <Route path="contact" element={<Contact />} />
       <Route path="faq" element={<Faq />} />
+      <Route path="privacy" element={<Privacy />} />
+      <Route path="delivery" element={<Delivery />} />
     </Route>
   )
 );
