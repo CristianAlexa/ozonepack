@@ -6,7 +6,7 @@ import { OzoneContext } from "../context/OzoneContext";
 import { GiRecycle } from "react-icons/gi";
 import { MdCompost } from "react-icons/md";
 
-const ProductThumb = ({ sku, img, id, name, price, feature }) => {
+const ProductThumb = ({ sku, img, id, name, price, feature, caseQty }) => {
   const { currency } = useContext(OzoneContext);
   return (
     <Link
@@ -33,11 +33,13 @@ const ProductThumb = ({ sku, img, id, name, price, feature }) => {
         </div>
         <div className="p-2">
           <p className="text-green-500 text-xs">{sku}</p>
+          <p className="text-slate-500 text-xs mt-2">Case of: {caseQty}</p>
+
           <h3 className="pt-3 pb-1 text-slate-700">{name}</h3>
-          <p className="text-lg text-gray-700">
+          <span className="text-lg text-gray-700 py-1 px-3 bg-slate-100">
             {currency}
             {price}
-          </p>
+          </span>
         </div>
       </div>
     </Link>

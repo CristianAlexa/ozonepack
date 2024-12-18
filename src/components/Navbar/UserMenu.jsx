@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const UserMenu = () => {
   return (
-    <div className="flex items-center gap-4 text-xl text-slate-500">
+    <div className="flex items-center gap-4 text-xl text-slate-500 z-20">
       <div className="group relative">
         <CiUser className="cursor-pointer hover:text-green-500" />
         <div className="group-hover:block hidden absolute right-[-60px] pt-4">

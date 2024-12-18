@@ -56,6 +56,7 @@ const Products = () => {
 
   useEffect(() => sortProducts(), [sortCondition]);
 
+  console.log(displayedProducts);
   return (
     <>
       <Section>
@@ -98,6 +99,7 @@ const Products = () => {
                   name={prod.name}
                   price={prod.price}
                   feature={prod.feature}
+                  caseQty={prod.caseQty}
                 />
               ))}
             </div>

@@ -16,6 +16,7 @@ import Delivery from "./pages/Delivery";
 
 // layouts
 import RootLayout from "./layouts/RootLayout";
+import ProductDisplayPage from "./pages/ProductDisplayPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -27,6 +28,7 @@ const router = createBrowserRouter(
       <Route path="faq" element={<Faq />} />
       <Route path="privacy" element={<Privacy />} />
       <Route path="delivery" element={<Delivery />} />
+      <Route path="product/:productId" element={<ProductDisplayPage />} />
     </Route>
   )
 );
