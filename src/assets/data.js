@@ -740,7 +740,7 @@ export const products = [
     img: [imgE51606],
   },
   {
-    _id: "a040",
+    _id: "a045",
     sku: "E60122",
     name: "Medium SOS Paper Bag Kraft",
     color: "Kraft",

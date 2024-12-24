@@ -51,12 +51,10 @@ const Products = () => {
 
   useEffect(() => {
     applyFilters();
-    console.log(search);
   }, [filteredCateg, filteredFeatures, search]);
 
   useEffect(() => sortProducts(), [sortCondition]);
 
-  console.log(displayedProducts);
   return (
     <>
       <Section>
